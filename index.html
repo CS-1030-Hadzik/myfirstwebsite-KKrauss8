@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <head>
-
+    <style>
+        
+        body { background-color:white; margin: 0px; font-family: Roboto; width: 100%;}
+        .header { background-color:royalblue; padding: 25px; text-align: center; font-size: 30pt; letter-spacing: 15px; } 
+        .my-dog { padding: 50px 0px 50px 0px; }
+        .my-dog-content { display: flex; flex-direction: row; justify-content: center; }
+        .my-dog-content div { width: 300px; height: 300px; border: 2px solid black; }
+        #main-header { text-align: center; padding: 100px; letter-spacing: 3px; }
+        #middle-para { margin-left: 30px; margin-right: 30px; width: 300px; height: 200px; background-color:#f9f9f9; }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
-    
+    <div class="header">
+        <h1>KODY KRAUSS</h1>
+    </div>
+    <div class="main">
+        <div id="main-header">
+            <h1>About Me</h1>
+        </div>
+        <div class="my-dog">
+            <div class="my-dog-content">
+                <div>
+                    <img src="imgs/mater.jpg" alt="My Dog" style="width:100%; border-radius:50%;">
+                </div>
+                <div id="middle-para">
+                    <p>This is my dog. His name is Mater. He is about fourteen years old.</p>
+                </div>
+                <div>
+                    <img src="imgs/mater2.jpg" alt="Also My Dog" style="width:100%; border-radius:50%;">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
