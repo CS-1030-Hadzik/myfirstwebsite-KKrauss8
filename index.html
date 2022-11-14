@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <head>
+    <title>About Me!</title>
     <style>
         
         body { background-color:white; margin: 0px; font-family: Roboto; width: 100%;}
+        h4 { letter-spacing: 2px; }
+        table { border-spacing: 15px; font-size: 15pt; letter-spacing: 2px; font-weight: bold; }
+        td { width: 150px; height: 150px; background-color:royalblue; text-align: center; border-radius: 10%; }
+        a { text-decoration: none; color:royalblue;}
         .header { background-color:royalblue; padding: 25px; text-align: center; font-size: 30pt; letter-spacing: 15px; } 
         .my-dog { padding: 50px 0px 50px 0px; }
         .my-dog-content { display: flex; flex-direction: row; justify-content: center; }
-        .my-dog-content div { width: 300px; height: 300px; border: 2px solid black; }
+        .my-dog-content div { width: 350px; height: 350px; }
+        .about-me { background-color:#fafafa; padding: 25px; }
+        .about-me-content { display: flex; justify-content: center; flex-direction: column; width: 50%; margin: auto; }
+        .link { padding: 20px; text-align: center; }
+        .final-section { padding: 100px; }
+        .final-section-table { display: flex; justify-content: center; }
         #main-header { text-align: center; padding: 100px; letter-spacing: 3px; }
-        #middle-para { margin-left: 30px; margin-right: 30px; width: 300px; height: 200px; background-color:#f9f9f9; }
+        #middle-para { margin: 0px 30px 0px 30px; width: 325px; height: 325px; padding: 25px; }
+        #about-me-header { text-align: center; letter-spacing: 3px; padding: 50px; }
+        #about-me-para { text-align: center; }
+        #final-section-header { letter-spacing: 3px; text-align: center; padding: 50px; }
     </style>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
@@ -18,7 +31,7 @@
     </div>
     <div class="main">
         <div id="main-header">
-            <h1>About Me</h1>
+            <h1>About My Dog</h1>
         </div>
         <div class="my-dog">
             <div class="my-dog-content">
@@ -26,11 +39,58 @@
                     <img src="imgs/mater.jpg" alt="My Dog" style="width:100%; border-radius:50%;">
                 </div>
                 <div id="middle-para">
-                    <p>This is my dog. His name is Mater. He is about fourteen years old.</p>
+                    <h4>This is my dog. His name is Mater. He is about fourteen years old. His breed is a mixture
+                        between a Chihuahua and a Miniature Pinscher. This breed is also known as a Minchi.
+                    </h4>
                 </div>
                 <div>
                     <img src="imgs/mater2.jpg" alt="Also My Dog" style="width:100%; border-radius:50%;">
                 </div>
+            </div>
+        </div>
+        <div class="about-me">
+            <div id="about-me-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-me-content">
+                <div id="about-me-para">
+                    <h4>My name is Kody Krauss. I am nineteen years old. My hobbies include software development,
+                        Guitar, and Snowboarding. Currently my favorite hobby is guitar. I am currently majoring
+                        in Computer Science and hope to be a software engineer in the future.
+                    </h4>
+                </div>
+                <div id="two-links">
+                    <div class="link">
+                        <a href="https://en.wikipedia.org/wiki/Guitar">Click here to learn about the Guitar!</a>
+                    </div>
+                    <div class="link">
+                        <a href="https://en.wikipedia.org/wiki/Snowboarding">Click here to learn about Snowboarding!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-section">
+            <div id="final-section-header">
+                <h1>A 3x3 Table</h1>
+            </div>
+            <div class="final-section-table">
+                <table>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 4</td>
+                        <td>Cell 5</td>
+                        <td>Cell 6</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 7</td>
+                        <td>Cell 8</td>
+                        <td>Cell 9</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
